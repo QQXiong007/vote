@@ -24,7 +24,7 @@ SaveVote($Var1, $Var2, $Var3, $Var4, $Var5, $Var6);
 
 <body>
 
-<p>畢業旅行投票-投票完成</p>
+<p>畢業旅行投票-投票完成   <a href="logout.php">登出</a></p>
 
 <?php
 echo "

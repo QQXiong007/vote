@@ -1,3 +1,13 @@
+<?php
+session_start(); 
+if(!isset($_SESSION["authenticated"])|| (time() - $_SESSION['authenticated']) > 600 ) 
+{
+    $redir = "login.php";
+    header("Location: $redir");
+    exit;
+}
+?>
+
 <html lang="lang="zh-Hant-TW"">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -5,7 +15,7 @@
 </head>
 <body>
 
-<p>畢業旅行投票</p>
+<p>畢業旅行投票   <a href="logout.php">登出</a></p>
 <form method='post' action='confirm2.php'>
 
 

@@ -14,7 +14,7 @@
 
 <body>
 
-<p>畢業旅行投票-確認投票</p>
+<p>畢業旅行投票-確認投票   <a href="logout.php">登出</a></p>
 <form method='post' action='save2.php'>
 
 <?php
