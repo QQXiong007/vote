@@ -1,0 +1,10 @@
+.virtualcube {
+    display: inline-block;
+    width: 550px;
+    height: 274px;
+}
+.virtualcube .cube-canvas {
+    width: 550px;
+    height: 550px;
+    object-fit: contain;
+}

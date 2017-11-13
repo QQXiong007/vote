@@ -11,11 +11,16 @@ if(!isset($_SESSION["authenticated"])|| (time() - $_SESSION['authenticated']) > 
 <html lang="lang="zh-Hant-TW"">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+
 <title>畢業旅行投票</title>
 </head>
 <body>
 
-<p>畢業旅行投票   <a href="logout.php">登出</a></p>
+
 <form method='post' action='confirm2.php'>
 
 
@@ -49,5 +54,4 @@ if(!isset($_SESSION["authenticated"])|| (time() - $_SESSION['authenticated']) > 
 </table>
 </form>
 </body>
-
 </html>

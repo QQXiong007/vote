@@ -20,6 +20,7 @@ if(isset($_POST["Enter"])){
 }
 
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="zh-Hant-TW">
 <head>
@@ -31,61 +32,43 @@ if(isset($_POST["Enter"])){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="CSS/signin.css" rel="stylesheet">
-    <link href="CSS/titlefont.css" rel="stylesheet">
-    <link href="CSS/enterbutton.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="CSS/signin.css" rel="stylesheet">
 
-    <!-- Optional JavaScript -->
-    <script src="http://jq22com.qiniudn.com/two.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-
+<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     
-    
 <title>登入系統</title>
 
 </head>
+
 <body>
-    <div style = "text-align:center">
-            <canvas style = "border-radius: 0% ; height:320px ; width:100%">
-                <script src="JS/yellowDot_T.js"></script>
-            </canvas>
+<div class="text-center">
+         <image class="rounded-circle" src="images\123.jpg" alt="my_image2" height="250" width="350" />
     </div>
     
-    <div id="app" style="padding:0px auto">
-        <div class="text-wrapper">
-            <div class="text part1">
-    
-                <anim-word v-bind:text="word1" @poof="rem"> </anim-word>
-            </div>
-            <!-- <div class="text part2">
-            <anim-word v-bind:text="word2" @poof="rem"></anim-word>
-            </div> -->
-            <div class="how-to"> <span v-if="clickTimes === 0">Just click a letter~</span><span v-else-if="clickTimes >= 5 && clickTimes < totalLetters">Hahahahaaaa! Click them all!!</span><span v-else-if="clickTimes >= totalLetters">Yeah~ you did it! You did it!!</span><span v-else="v-else">Keep going... </span></div>
-        </div>
-    </div>
-    <div style="text-align:center ; margin: 0px 42%">
+<div style="text-align:center;">
+
       <form class="form-signin" method="POST" action="login.php">
+        <h2 class="form-signin-heading">畢業旅行投票</h2>
+        <label for="inputEmail" class="sr-only">學號</label>
         <input type="text" name="SID" id="SID" class="form-control" placeholder="Account" required autofocus>
+        <?php echo $msgError; ?>
+        <label for="inputPassword" class="sr-only">密碼</label>
         <input type="password" name="SCode" id="SCode" class="form-control" placeholder="Password" required>
-        <div class='btn-container'>
-        <button class='btn btn--shockwave is-active' type="submit" name="Enter" id="Enter">
-            登入
-        </button>
-    </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> 記得我
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="Enter" id="Enter">登入</button>
       </form>
 
     </div> <!-- /container -->
-
-    
-
-<script src="JS/titlefont.js"></script>
-<script src="JS/enterbutton.js"></script>
 </body>
 </html>
+
+
