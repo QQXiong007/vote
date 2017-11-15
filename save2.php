@@ -26,6 +26,7 @@ SaveVote($Var1, $Var2, $Var3, $Var4, $Var5, $Var6);
 
 <p>畢業旅行投票-投票完成   <a href="logout.php">登出</a></p>
 
+<div width='70%' id='table1' style = "background-color:#888888">
 <?php
 echo "
 <table border='1' width='100%' id='table1'>
@@ -51,6 +52,7 @@ echo "
     </tr>
 </table>";
 ?>
+</div>
 </form>
 <hr>
 <a href='list2.php'>查看報名資料</a>

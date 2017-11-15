@@ -17,6 +17,7 @@
 <p>畢業旅行投票-確認投票   <a href="logout.php">登出</a></p>
 <form method='post' action='save2.php'>
 
+<div width='70%' id='table1' style = "background-color:#888888">
 <?php
 print "
 <table border='1' width='100%' id='table1'>
@@ -44,6 +45,9 @@ print "
         <td align='right' width='200'>　</td>
         <td>
         ";
+?>
+</div>
+<?php
 if ($Var4=='')
    echo "沒有選擇地點<a href='javascript:history.back()'>,請回上一頁重新填寫</a>";
 else
